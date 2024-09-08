@@ -1,5 +1,3 @@
-import Cost from "./components/Costs";
-// import CostItem from "./components/CostItem";
 import Costs from "./components/Costs";
 
 function App() {
