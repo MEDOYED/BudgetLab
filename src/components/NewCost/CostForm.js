@@ -14,7 +14,7 @@ const ConstForm = () => {
         </div>
         <div className="new-cost__control">
           <label>Дата</label>
-          <input type="text" min="2019-01-01" step="2025-01-01"></input>
+          <input type="date" min="2019-01-01" step="2025-01-01"></input>
         </div>
         <div className="new-cost__actions">
           <button type="submit">Добавити витрату</button>
