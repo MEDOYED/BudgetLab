@@ -72,14 +72,27 @@ const ConstForm = props => {
         </div>
         <div className="new-cost__control">
           <label>Сума</label>
-          <input value={inputAmount} onChange={amountChangeHandler} type="text" min="0.01" step="0.01"></input>
+          <input
+            value={inputAmount}
+            onChange={amountChangeHandler}
+            type="text"
+            min="0.01"
+            step="0.01"
+          ></input>
         </div>
         <div className="new-cost__control">
           <label>Дата</label>
-          <input value={inputDate} onChange={dateChangeHandler} type="date" min="2019-01-01" step="2025-01-01"></input>
+          <input
+            value={inputDate}
+            onChange={dateChangeHandler}
+            type="date"
+            min="2019-01-01"
+            step="2025-01-01"
+          ></input>
         </div>
         <div className="new-cost__actions">
           <button type="submit">Добавити витрату</button>
+          <button onClick={props.toggleOpenForm}>Відмінити</button>
         </div>
       </div>
     </form>
